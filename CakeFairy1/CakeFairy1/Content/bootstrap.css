@@ -10,7 +10,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+    margin: 0;
+    background-image: url("../Images/cloudtheme1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 article,
 aside,
@@ -27,6 +30,18 @@ section,
 summary {
   display: block;
 }
+footer {
+    
+    width: 100%;
+    height: 2.5rem;
+    bottom: 0;
+    text-align: center;
+}
+.body-content{
+    padding-bottom: 2.5rem;
+}
+
+
 audio,
 canvas,
 progress,
@@ -43,7 +58,7 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
+  background-color: transparent;ti
 }
 a:active,
 a:hover {
@@ -1586,6 +1601,9 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container.body-content{
+    padding-bottom:2.5rem;
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -2047,9 +2065,32 @@ pre code {
   .col-md-5 {
     width: 41.66666667%;
   }
-  .col-md-4 {
-    width: 33.33333333%;
-  }
+
+/*Column in default page */
+    .col-md-4 {
+        width: 33%;
+        margin: 0.1%;
+        
+    }
+    
+    .outter-col-md-4 {
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        opacity: 0.7;
+        height: 300px;
+        box-shadow: 1px 1px 2px purple, 0 0 25px pink, 0 0 5px darkblue;
+    }
+    /*Store Hour*/
+    .mid-col-md-4 {
+        border-radius: 50%;
+        text-align: center;
+        background-color: white;
+        opacity: 0.7;
+        height: 300px;
+        box-shadow: 1px 1px 2px purple, 0 0 25px pink, 0 0 5px darkblue;
+    }
+/*End*/
   .col-md-3 {
     width: 25%;
   }
@@ -4665,28 +4706,28 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+    background-color: lightseagreen;
+    border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+  color: white;
 }
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-brand:focus {
-  color: #fff;
-  background-color: transparent;
-}
+    .navbar-inverse .navbar-brand:hover,
+    .navbar-inverse .navbar-brand:focus {
+        color: violet;
+        background-color: transparent;
+    }
 .navbar-inverse .navbar-text {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #9d9d9d;
+  color: white;
 }
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
-  color: #fff;
-  background-color: transparent;
-}
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        color: violet;
+        background-color: transparent;
+    }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -5031,17 +5072,24 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+/* Default page*/
+.defaultPage{
+  
+}
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eeeeee;
+ /* background-color: #eeeeee;*/
 }
-.jumbotron h1,
-.jumbotron .h1 {
-  color: inherit;
-}
+
+    .jumbotron h1,
+    .jumbotron .h1 {
+        color: hotpink;
+        text-align: center;
+        font-family: Algerian;
+    }
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
@@ -5175,8 +5223,21 @@ a.thumbnail.active {
 .alert-danger .alert-link {
   color: #843534;
 }
+.ImgOutterCol {
+
+    width: 50%;
+    margin: auto;
+    height: 40%;
+    border-radius: 10%;
+}
+.ImgOutterCol:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
 @-webkit-keyframes progress-bar-stripes {
-  from {
+    from {
     background-position: 40px 0;
   }
   to {
@@ -5198,6 +5259,19 @@ a.thumbnail.active {
   to {
     background-position: 0 0;
   }
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 .progress {
   height: 20px;
@@ -6832,3 +6906,15 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/*Contact page*/
+.txtContact{
+   border-radius: 20px;
+   opacity:0.7;
+}
+.ContactForm{
+    box-sizing: border-box;
+}
+.contactRow{
+    padding:10px;
+    margin-bottom: 10px;
+}
