@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="CakeFairy1.Store.Cart" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <%--style--%>
     <style>
         .imgItems {
             width: 100px;
@@ -9,10 +10,7 @@
         h1 {
             text-align:center;
         }
-        
     </style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <h1>Cart</h1>
     <br />
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" ShowFooter="True" OnRowDeleting="GridView1_RowDeleting">

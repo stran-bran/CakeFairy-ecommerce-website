@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Menu.aspx.cs" Inherits="CakeFairy1.Store.Menu" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+   <%-- css--%>
     <style>
         .imgItems {
             width: 140px;
@@ -20,8 +21,6 @@
                 margin:0;
         }
     </style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <%--bread section--%>
     <h2>Bread</h2>
     <asp:DataList ID="dlBread" runat="server" DataKeyField="ItemID" DataSourceID="dbBreadItem" BackColor="White" RepeatColumns="2" RepeatDirection="Horizontal" CellPadding="0" OnItemCommand="dl_ItemCommand">

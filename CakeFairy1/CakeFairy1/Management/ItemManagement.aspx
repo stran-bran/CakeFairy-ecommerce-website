@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ItemManagement.aspx.cs" Inherits="CakeFairy1.Management.ItemManagement" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <style>
         img {
             width:150px;
@@ -7,8 +7,6 @@
             object-fit:contain;
         }
     </style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <%--shows new catagory creation form--%>
     <asp:Button ID="btnNewType" runat="server" Text="Create new category" OnClick="btnNewType_Click" />
     <%--category creation form--%>
