@@ -6906,3 +6906,15 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/*Contact page*/
+.txtContact{
+   border-radius: 20px;
+   opacity:0.7;
+}
+.ContactForm{
+    box-sizing: border-box;
+}
+.contactRow{
+    padding:10px;
+    margin-bottom: 10px;
+}
