@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Menu.aspx.cs" Inherits="CakeFairy1.Store.Menu" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-   <%-- css--%>
+    <%-- css--%>
     <style>
         .imgItems {
             width: 140px;

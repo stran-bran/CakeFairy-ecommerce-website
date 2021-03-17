@@ -46,7 +46,7 @@
                             <tr>
                                 <td style="vertical-align: top; color:hotpink"  class="contactRow"><b>Messages: </b> </td>
                                 <td style="vertical-align: top"  class="txtContact">
-                                    <asp:TextBox ID="txtMessages" class="txtContact" runat="server" Columns="25" rows="5" TextMode="MultiLine" Font-Size="20px"></asp:TextBox> </td>
+                                    <asp:TextBox ID="txtMessages" class="txtContact" runat="server" Columns="26" rows="5" TextMode="MultiLine" Font-Size="20px"></asp:TextBox> </td>
                                 <td style="vertical-align: top"><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Messages is required" Text="*" ForeColor="Red" ControlToValidate="txtMessages" ></asp:RequiredFieldValidator></td>
                             </tr>
                             <tr>
